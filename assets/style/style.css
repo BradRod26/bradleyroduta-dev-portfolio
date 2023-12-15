@@ -1,0 +1,318 @@
+body{
+  width: 100%;
+  background: linear-gradient(45deg,#892107,#0a0c54,#0e8b59,#150230);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes color{
+  0%{
+      background-position: 0 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0 50%;
+  }
+}
+
+.Nav{
+  width: 70vw;
+  min-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.Name{
+  color:rgb(255, 255, 255);
+  font-size: 100px;
+  font-family: sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.Nav a{
+  position: relative;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(213, 213, 213);
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+a::after{
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+} 
+
+a:hover{
+  color: #ffffff;
+}
+
+a:hover::after{
+  width: 100%;
+}
+
+
+.About {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 100px;
+  color: #f1f1f1;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.TS{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  color: #f1f1f1;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+}
+
+.Intro {
+  font-size: 200%;
+  color: #f1f1f1;
+  text-align: center;
+  max-height: 300px;
+  margin-top: 100px;
+}
+
+.Brad {
+  display: flex;
+  border-radius: 25px;
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.skill{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+  margin: auto;
+  top: 200;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill-per{
+  height: 14px;
+  background: #8420dc;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+.Resume {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 100px;
+  color: #f1f1f1;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.Educ {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: #f1f1f1;
+  margin: 5%;
+  margin-left: 10%;
+  float: left;
+}
+
+.Prof-Exp {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: #f1f1f1;
+  margin: 5%;
+  margin-right: 8%;
+  float: right;
+
+}
+.Port {
+  font-size: 100px;
+  text-align: center;
+  color: #f1f1f1
+}
+
+.Projek {
+  text-align: center;
+  color: #f1f1f1
+}
+
+.Proj {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Proj img {
+  flex-wrap: wrap;
+  width: 320px;
+  height: 300px;
+  margin: 10px;
+}
+
+.Photo {
+  text-align: center;
+  color: #f1f1f1
+}
+
+.PhotoG {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.PhotoG img {
+  flex-wrap: wrap;
+  width: 320px;
+  height: 300px;
+  margin: 10px;
+}
+
+.Arte {
+  text-align: center;
+  color: #f1f1f1
+}
+
+.Arts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Arts img {
+  flex-wrap: wrap;
+  width: 320px;
+  height: 300px;
+  margin: 10px;
+}
+
+.Con {
+  align-items: center;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.Con h1 {
+  font-size: 100px;
+}
+
+.Con p {
+  font-size: 15px;
+}
+
+.Soc-Med a{
+margin-top: 20px;
+text-decoration: none;
+padding: 10px;
+background-color: #f1f1f1;
+margin: 10px;
+border-radius: 50%;
+}
+
+@media screen and (max-width:767px) {
+  body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg,#892107,#0a0c54,#0e8b59,#150230);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:767) and (max-width:1023) {
+  body{
+    width: 100%;
+    background: linear-gradient(45deg,#892107,#0a0c54,#0e8b59,#150230);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  body{
+    width: 100%;
+    background: linear-gradient(45deg,#892107,#0a0c54,#0e8b59,#150230);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+  
